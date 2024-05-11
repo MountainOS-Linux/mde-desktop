@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=MDE
-Comment=MountainOS Desktop Enviroment
-Exec=@bindir@/openbox-session
-TryExec=@bindir@/openbox-session
-Type=Application

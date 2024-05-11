@@ -3118,10 +3118,8 @@ void client_try_configure(ObClient *self, gint *x, gint *y, gint *w, gint *h,
 
         /* adjust the height to match the width for the aspect ratios.
            for this, min size is not substituted for base size ever. */
-        if (self->base_size.width >= 0 && self->base_size.height >= 0) {
-            *w -= self->base_size.width;
-            *h -= self->base_size.height;
-        }
+        *w -= self->base_size.width;
+        *h -= self->base_size.height;
 
         if (minratio)
             if (*h * minratio > *w) {
@@ -3144,10 +3142,8 @@ void client_try_configure(ObClient *self, gint *x, gint *y, gint *w, gint *h,
                 }
             }
 
-        if (self->base_size.width >= 0 && self->base_size.height >= 0) {
-            *w += self->base_size.width;
-            *h += self->base_size.height;
-        }
+        *w += self->base_size.width;
+        *h += self->base_size.height;
     }
 
     /* these override the above states! if you cant move you can't move! */

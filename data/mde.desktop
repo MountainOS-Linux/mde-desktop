@@ -2,7 +2,6 @@
 Type=Application
 Name=MDE
 Exec=openbox
-Icon=openbox
 NoDisplay=true
 # name we put on the WM spec check window
 X-GNOME-WMName=MDE
@@ -13,3 +12,4 @@ X-GNOME-Provides=windowmanager
 X-Ubuntu-Gettext-Domain=openbox
 # back compat
 X-GNOME-Autostart-Notify=true
+Name[pl_PL]=mde.desktop

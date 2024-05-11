@@ -15,3 +15,7 @@
 # If you want to use XFCE config tools...
 #
 #xfce-mcs-manager &
+lxsession &
+lxpanel &
+pcmanfm --desktop &
+pulseaudio
